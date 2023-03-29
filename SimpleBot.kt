@@ -2,11 +2,10 @@ package bot
 
 import java.util.Scanner
 
-
-val scanner = Scanner(System.`in`) // Do not change this line
+val scanner = Scanner(System.`in`) 
 
 fun main() {
-    greet("Aid", "2020") // change it as you need
+    greet("Zorgtron", "2023")
     remindName()
     guessAge()
     count()
@@ -14,18 +13,18 @@ fun main() {
     end()
 }
 
-fun greet(assistantName: String, birthYear: String) {
+fun greet(assistantName: String, birthYear: String) { //greets the user with the given birthyear and name
     println("Hello! My name is ${assistantName}.")
     println("I was created in ${birthYear}.")
     println("Please, remind me your name.")
 }
 
-fun remindName() {
+fun remindName() { //asks for the user name and compliments it
     val name = scanner.nextLine()
     println("What a great name you have, ${name}!")
 }
 
-fun guessAge() {
+fun guessAge() { //guesses the user's age by getting the remainders of dividing his age by 3, 5 and 7
     println("Let me guess your age.")
     println("Enter remainders of dividing your age by 3, 5 and 7.")
     val rem3 = scanner.nextInt()
@@ -35,7 +34,7 @@ fun guessAge() {
     println("Your age is ${age}; that's a good time to start programming!")
 }
 
-fun count() {
+fun count() { // counts up to any number that the user inputs, also adding a exclamation mark at each number on the count.
     println("Now I will prove to you that I can count to any number you want.")
     val num = scanner.nextInt()
     for (i in 0..num) {
@@ -44,7 +43,7 @@ fun count() {
     }
 }
 
-fun test() {
+fun test() { // asks the user a question, and ends the loop when the correct answer is inputed.
     var answer = 0
     println("Let's test your programming knowledge.")
     println("Why do we use methods?")
@@ -63,5 +62,5 @@ fun test() {
 }
 
 fun end() {
-    println("Congratulations, have a nice day!") // Do not change this text
+    println("Congratulations, have a nice day!") 
 }
