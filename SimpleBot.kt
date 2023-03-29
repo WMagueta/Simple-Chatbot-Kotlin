@@ -42,7 +42,7 @@ fun count() { // Counts up to any number that the user inputs;
     }
 }
 
-fun test() { // asks the user a question, and ends the loop when the correct answer is inputed.
+fun test() { // Asks the user a question, and ends the loop when the correct answer is inputed.
     var answer = 0
     println("Let's test your programming knowledge.")
     println("Why do we use methods?")
