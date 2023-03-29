@@ -13,18 +13,18 @@ fun main() {
     end()
 }
 
-fun greet(assistantName: String, birthYear: String) { //greets the user with the given birthyear and name
+fun greet(assistantName: String, birthYear: String) { // Greets the user with the given birthyear and name
     println("Hello! My name is ${assistantName}.")
     println("I was created in ${birthYear}.")
     println("Please, remind me your name.")
 }
 
-fun remindName() { //asks for the user name and compliments it
+fun remindName() { // Asks for the user name and compliments it
     val name = scanner.nextLine()
     println("What a great name you have, ${name}!")
 }
 
-fun guessAge() { //guesses the user's age by getting the remainders of dividing his age by 3, 5 and 7
+fun guessAge() { // Guesses the user's age by getting the remainders of dividing his age by 3, 5 and 7
     println("Let me guess your age.")
     println("Enter remainders of dividing your age by 3, 5 and 7.")
     val rem3 = scanner.nextInt()
@@ -34,12 +34,11 @@ fun guessAge() { //guesses the user's age by getting the remainders of dividing 
     println("Your age is ${age}; that's a good time to start programming!")
 }
 
-fun count() { // counts up to any number that the user inputs, also adding a exclamation mark at each number on the count.
+fun count() { // Counts up to any number that the user inputs;
     println("Now I will prove to you that I can count to any number you want.")
     val num = scanner.nextInt()
     for (i in 0..num) {
-        print(i)
-        println("!")
+        println(i)
     }
 }
 
